@@ -170,6 +170,8 @@ section{
     color: #242424;
     text-align: center; 
     margin-top: 10px;
+    border: 1px solid #242424;
+    color: #27ae60;
 }
 .acc_txt{
     display: none;
