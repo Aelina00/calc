@@ -4,6 +4,7 @@ const btnPlus = $('.btn__plus');
 const btnMinus = $('.btn__minus'); 
 const btnMulti = $('.btn__multi');
 const btnDivi = $('.btn__divi');
+const btnPercent = $('.btn__persent');
 const result = $('.result');
 
 btnPlus.on('click', function() {
@@ -29,6 +30,14 @@ btnDivi.on('click', function() {
     result.text(divi);
     console.log(divi);
 });
+
+btnPercent.on('click', function() {
+    let percentage = (+input1.val() / 100) * +input2.val();
+    result.text(percentage);
+    console.log(percentage);
+});
+
+
 
 // $('.btn_acc').on('click', function(){
 //     $('.acc_txt').slideToggle(300)
